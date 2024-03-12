@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: lahcenetouidjineazurecloud 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lahcenetouidjineazurecloud
+  template:
+    metadata:
+      labels:
+        app: lahcenetouidjineazurecloud 
+    spec:
+      containers:
+        - name: lahcenetouidjineazurecloud 
+          image: petstore17.azurecr.io/lahcenetouidjineazurecloud
+          ports:
+          - containerPort: 80
