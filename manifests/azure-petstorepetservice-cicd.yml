@@ -16,7 +16,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'c76d8df8-2eb7-4123-97b7-bb45050a4169'
+  dockerRegistryServiceConnection: 'ac9bb3ef-9197-4e94-a420-94996425a9f1'
   imageRepository: 'petstorepetservice'
   containerRegistry: 'petstore17.azurecr.io'
   dockerfilePath: 'petstore/petstorepetservice/Dockerfile'
@@ -94,7 +94,6 @@ stages:
                 $(Pipeline.Workspace)/manifests/petstorepetservice-deployment-everything-enabled.yml
                 $(Pipeline.Workspace)/manifests/petstorepetservice-service-everything-enabled.yml
               imagePullSecrets: |
-                $(imagePullSecretGlobalV3)
+                $(imagePullSecret)
               containers: |
-                $(dockerRegistryServiceConnection)/$(imageRepository):$(tag)
-                
+                $(containerRegistry)/$(imageRepository):$(tag)
