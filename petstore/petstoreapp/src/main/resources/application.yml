@@ -10,7 +10,7 @@ petstore:
     pet:
      url: ${PETSTOREPETSERVICE_URL:http://172.212.41.135/}
     product:
-      url: ${PETSTOREPRODUCTSERVICE_URL:http://172.212.41.135/}
+      url: ${PETSTOREPRODUCTSERVICE_URL:http://57.151.11.140/}
     order:
       url: ${PETSTOREORDERSERVICE_URL:http://172.212.41.135/}
     #subscription:
