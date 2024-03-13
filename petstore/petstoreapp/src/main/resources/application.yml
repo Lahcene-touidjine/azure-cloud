@@ -1,5 +1,4 @@
 #logging:
-#logging:
 #  level:
 #    org.springframework: DEBUG
 bing:
@@ -7,7 +6,7 @@ bing:
     subscription:
       key: ${BING_SEARCH_SUBSCRIPTION_KEY:}
 petstore:
- service:
+  service:
     pet:
      url: ${PETSTOREPETSERVICE_URL:http://localhost:8081}
     product:
