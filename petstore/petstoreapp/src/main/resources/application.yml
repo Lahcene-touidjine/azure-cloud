@@ -41,7 +41,7 @@ server:
 #        sign-up-or-sign-in: B2C_1_signupsignin
 #        profile-edit: B2C_1_profileediting
 #        password-reset: B2C_1_passwordreset
-#  application-insights:
+  application-insights:
      instrumentation-key: ${PETSTOREAPP_AI_INSTRUMENTATION_KEY}
 management:
   endpoints:
